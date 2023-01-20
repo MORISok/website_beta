@@ -1,0 +1,31 @@
+ <html>
+  <head>
+    <title>Website Beta</title>
+    <center><h1>Beta WebSite</h1></center>
+    <hr></hr>
+  </head>
+  <body
+    
+    bgcolor="#b3d9ff"
+    text="#000000"
+    
+    >
+    <p>This is the main page of Website Beta.</p>
+
+    <button onclick="myFunction()">Click here for a personalised message</button>
+
+<p id="demo"></p>
+
+  <script>
+function myFunction() {
+  let person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today? I hope you are doing fine!";
+  }
+}
+  </script>
+
+    
+  </body>
+</html>
