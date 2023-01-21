@@ -1,31 +1,101 @@
- <html>
-  <head>
-    <title>Website Beta</title>
-    <center><h1>Beta WebSite</h1></center>
-    <hr></hr>
-  </head>
-  <body
-    
-    bgcolor="#b3d9ff"
-    text="#000000"
-    
-    >
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This will make scrolling smoother -->
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<!-- Adds a title on your tab "BWS" and adds a title to your page called Beta WebSite -->
+
+<head>
+  <title>BWS</title>
+  <center>
+    <h1>Beta WebSite</h1>
+  </center>
+  <hr>
+  </hr>
+</head>
+
+<center>
+
+  <!-- Changes the background colour to light blue -->
+
+  <body bgcolor="#b3d9ff" text="#000000">
+
+    <img src="axolotl.png" alt="Axolotl" width="450" height="300">
+    <style>
+      img {
+        border-radius: 50%
+      }
+    </style>
+
     <p>This is the main page of Website Beta.</p>
 
-    <button onclick="myFunction()">Click here for a personalised message</button>
+    <!-- A videoplayer for videos from youtube -->
 
-<p id="demo"></p>
+    <center>
 
-  <script>
-function myFunction() {
-  let person = prompt("Please enter your name", "Harry Potter");
-  if (person != null) {
-    document.getElementById("demo").innerHTML =
-    "Hello " + person + "! How are you today? I hope you are doing fine!";
-  }
-}
-  </script>
+      <iframe width="420" height="345" src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+      </iframe>
 
-    
+    </center>
+
+    <!-- Button that shows up a window to write your name and then you will get a nice personalised message -->
+
+    <button onclick="myFunction()">Click me and write your name to get a nice and personalised message</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        let person = prompt("Please enter your name", "Harry Potter");
+        if (person != null) {
+          document.getElementById("demo").innerHTML =
+            "Hello " + person + "! How are you today? I hope you are doing fine!";
+        }
+      }
+    </script>
+
+    <!-- Shows a message if you don't have java enabled in your browser -->
+
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+    <!-- Allows you to translate this page to any available language in Google Translate -->
+
+    <p>Translate this page:</p>
+
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>
+
+    <script type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <p>You can translate the content of this page by selecting a language in the select box.</p>
+
   </body>
+
+  <hr>
+  </hr>
+
+  <!-- Footer starts here -->
+
+  <footer>
+    <p>Copyright © 2023, Kuba Pufelski and Oskar Doyle</p>
+
+    <!--A hyperlink that will redirect you to a page that is not part of the website -->
+
+    <a href="https://sites.google.com/jebelalischool.org/programming/home">Click here to learn programming!</a>
+  </footer>
+
+</center>
+
 </html>

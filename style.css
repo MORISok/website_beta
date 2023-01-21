@@ -1,4 +1,20 @@
-html, body {
-  height: 100%;
-  width: 100%;
+html {
+    scroll-behavior: smooth; /* This will make scrolling on the page smooth */
+}
+
+body {
+    background-color: #b3d9ff; /* This will set the background color of the page to a light blue */
+    color: #000000; /* This will set the text color to black */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif; /* This will set the default font for the page to Arial */
+}
+
+h1 {
+    text-align: center; /* This will center the h1 heading */
+}
+
+button {
+    background-color: #4CAF50; /* This will set the background color of the button to green */
+    color: white; /* This will set the text color of the button to white */
+    padding: 14px 20px; /* This will add some padding to the button */
+    cursor: pointer; /* This will change the cursor to a pointer when hovering over the button */
 }
